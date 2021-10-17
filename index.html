@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Focus test</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="input_form">Поле для ввода: </label>
+            <input type="text" name="input_form" id="input_form" required size="45"
+                pattern="[А-Я]{1}[а-я]{1,};[А-Я]{1}[а-я]{1,};[А-Я]{1}[а-я]{1,}"
+                title="Введите данные в формате: Имя;Фамилия;Должность" placeholder="Имя;Фамилия;Должность">
+        </div>
+        <div>
+            <label for="input_form">Поле для вывода: </label>
+            <input type="text" name="output_form" id="output_form" required size="45">
+        </div>
+        <div>
+            <button type="button" onclick="parseInput()">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
